@@ -1,0 +1,68 @@
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+
+.l-scroll{
+  position:relative;
+  display:flex;
+  flex-direction: row-reverse;
+  &__sticky{
+    position:sticky;
+    left:0;
+    top:0;
+    width:50%;
+    height:100vh;
+    padding:2vw;
+  }
+  &__static{
+    width:50%;
+    position:static;
+  }
+}
+
+.p-section-hero{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#fcc;
+  &__title{
+    width: max-content;
+  }
+}
+
+.p-section-intro{
+  background:#cfc;
+  height:100vh;
+  &__title{
+
+  }
+}
+.p-section-about{
+  background:#ccf;
+  height:100vh;
+  &__title{
+
+  }
+}
+
+.p-section-contact{
+  background:#ccc;
+  height:100vh;
+  &__title{
+
+  }
+}
+
+
+#map{
+  width:100%;
+  height:100%;
+  border-radius: 1vw;
+}
