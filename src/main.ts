@@ -19,6 +19,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <section class="p-section-about" data-scene-index="2">
         <h2 class="p-section-about__title">About</h2>
       </section>
+      <section class="p-section-services" data-scene-index="3">
+        <h2 class="p-section-services__title">Services</h2>
+      </section>
     </div>
   </div>
   <section class="p-section-contact">
@@ -80,6 +83,10 @@ const SCENE_LIST:Scene[]=[
     index:2,
     bounds:[[135.4889978,34.6872712],[135.4970075,34.6830593]],
   },
+  {
+    index:3,
+    bounds:[[135.5063437,34.6479755],[135.5137631,34.6534637]],
+  },
 ];
 
 const sceneController=new SceneController(map,SCENE_LIST);
@@ -107,5 +114,4 @@ for(let sceneElement of sceneElementList){
   intersectionObserver.observe(sceneElement);
 
 }
-
 
