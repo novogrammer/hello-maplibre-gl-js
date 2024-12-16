@@ -86,7 +86,7 @@ const sceneController=new SceneController(map,SCENE_LIST);
 
 
 const intersectionObserverOption={
-  rootMargin:"0px 0px 0px 0px",
+  rootMargin:"-25% 0px -25% 0px",
   threshold:0,
 };
 const intersectionObserver = new IntersectionObserver((entries)=>{
