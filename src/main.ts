@@ -64,13 +64,7 @@ const map = new maplibregl.Map({
   center: [135.4948501,34.6856111], // starting position [lng, lat]
   zoom: 18, // starting zoom
   // https://maplibre.org/maplibre-gl-js/docs/examples/toggle-interaction-handlers/
-  scrollZoom:false,
-  boxZoom:false,
-  dragRotate:false,
-  dragPan:false,
-  keyboard:false,
-  doubleClickZoom:false,
-  touchZoomRotate:false,
+  interactive:false,
 });
 
 const SCENE_LIST:Scene[]=[
