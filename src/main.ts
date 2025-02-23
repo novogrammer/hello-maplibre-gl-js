@@ -4,6 +4,9 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import './style.scss'
 import { Scene, SceneController } from "./SceneController";
 
+import modifiedStyle from "./osm-bright-ja_style_modified.json";
+
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <section class="p-section-hero">
     <h1 class="p-section-hero__title">Hero</h1>
@@ -37,7 +40,8 @@ if(!mapElement){
 const map = new maplibregl.Map({
   container: mapElement,
   // style:"https://tile2.openstreetmap.jp/styles/osm-bright/style.json",
-  style:"https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json",
+  // style:"https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json",
+  style:modifiedStyle as any,
   // style: {
   //     version: 8,
   //     sources: {
@@ -82,6 +86,8 @@ const SCENE_LIST:Scene[]=[
     bounds:[[135.5063437,34.6479755],[135.5137631,34.6534637]],
   },
 ];
+
+console.log(map.style);
 
 const sceneController=new SceneController(map,SCENE_LIST);
 
